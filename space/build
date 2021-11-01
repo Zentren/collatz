@@ -1,0 +1,5 @@
+#!/bin/bash
+
+mkdir -p dist
+g++ -std=c++17 main.cpp collatz.cpp -o dist/app -D DOCTEST_CONFIG_DISABLE
+g++ -std=c++17 collatz.cpp -o dist/test -D DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
